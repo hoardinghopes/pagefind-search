@@ -93,7 +93,7 @@ class PagefindSearch extends HTMLElement {
 		this.appendChild(link);
 
 		let scriptUrl = `${this.bundlePath}pagefind-ui.js`;
-		this.scriptPromise = import(scriptUrl);
+		this.scriptPromise = import(/*webpackIgnore: true*/ scriptUrl);
 		if(!this.hasAttribute(PagefindSearch.attrs.manualInit)) {
 			await this.scriptPromise;
 			await this.pagefind();
