@@ -1,5 +1,7 @@
 # pagefind-search
 
+This cloned version simply adds `/*webpackIgnore: true*/` to prevent the build breaking.
+
 Web Component to easily add the [Pagefind search UI](https://pagefind.app/) to your web site. This unlocks more control of asset loading via [`<is-land>`](https://www.11ty.dev/docs/plugins/partial-hydration/).
 
 ## Usage
